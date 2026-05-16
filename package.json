@@ -1,0 +1,37 @@
+{
+  "name": "docsync",
+  "version": "1.0.0",
+  "description": "A Node.js CLI that hooks into git pre-commit, scans markdown documentation files, and uses AI to identify stale/outdated sections when code changes",
+  "main": "cli/index.js",
+  "type": "module",
+  "bin": {
+    "docsync": "./cli/index.js"
+  },
+  "scripts": {
+    "start": "node cli/index.js",
+    "server": "node cli/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "documentation",
+    "git",
+    "pre-commit",
+    "ai",
+    "markdown",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.22.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
